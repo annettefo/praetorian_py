@@ -111,7 +111,46 @@ for x in range(0,10):
     print(x, ' ', end="")
 print('\n')
 
-errands_list = ['Hello to bella', 'Talk to boo', 'Study for Amazon']
+errands_list = ['Hello to bella', 'Talk to boo', 'Study for Amazon', 'Pass GISF']
 
 for x in errands_list:
     print(x)
+
+for y in [3, 7 ,6, 11, 88]:
+    print(y)
+
+num_list = [[1,2,3],[4,5,6],[7,8,9]]
+# first for loop prints
+#[1,2,3]
+#[4,5,6]
+#[7,8,9]
+for x in range(0,3):
+    # second for loop prints
+    # 1
+    # 2
+    # 3
+    # 4
+    # 5
+    # 6
+    # 7
+    # 8
+    for y in range(0,3):
+        print(num_list[x][y])
+
+#WHILE LOOP
+
+random_num = random.randrange(0,100)
+
+while(random_num != 15):
+    print(random_num)
+    random_num = random.randrange(0,100)
+
+i = 0
+while(i <= 20):
+    if(i%2 ==0):
+        print("while",i)
+    elif(i == 9):
+    else:
+        i += 1 # i = i+1
+        continue
+    i += 1
