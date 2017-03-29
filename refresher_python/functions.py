@@ -31,3 +31,7 @@ print(long_string.find("floor"))
 print(long_string.isalpha())
 # returns true or false if there is all numbers or not
 print(long_string.isalnum())
+print(len(long_string))
+
+quote_list = long_string.split(" ")
+print(quote_list)
