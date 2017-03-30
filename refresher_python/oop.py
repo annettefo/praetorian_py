@@ -1,16 +1,10 @@
 import random
 import sys
-import os as
-
+import os
 #OBJECT ORIENTED PROGRAMMING, ATTRIBUTES. CLASSES
 
 class Animal:
 ## __ means this is private --if we change values, use function inside class or if we need to use outside the class need to define function inside class
-    __name = "" # or "" or None
-    __height = 0
-    __weight = 0
-    __sound = 0
-
 ##SETTERS AND GETTERS
 ## CONTSTRUCTOR __ initializes OBJECT
     def __init__(self, name, height, weight, sound):
@@ -18,9 +12,7 @@ class Animal:
         self.__name = name
         self.__height = height
         self.__weight = weight
-        self.__sound
-
-
+        self.__sound = sound
 ## SELF allows object to refer itself, want to change itself
     def set_name(self, name):
         self.__name = name
@@ -39,3 +31,13 @@ class Animal:
         return self.__weight
     def get_sound(self):
         return self.__sound
+
+    def get_type(self):
+        print("Animal")
+
+    def toString(self):
+        return "{} is {} cm tall and {} killograms and say {}".format(self.__name,self.__height,self.__weight,self.__sound)
+
+#CREATE OBJECT
+dog = Animal("Bella", 33, 10, "Bark")
+print dog.toString()

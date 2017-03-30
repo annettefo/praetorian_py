@@ -11,6 +11,22 @@ def addNumber(fNum, lNum):
 print(addNumber(1,4))
 # string = addNumber(1, 4) #doesnt work
 
+for count in range(0,10):
+    print(count, ' ', end="")
+print('\n')
+
+num = 0
+while num < 5:
+    print("whilelooping", num)
+    num += 1
+
+str = "Hello"
+for val in str:
+    if val == "l":
+        break
+    print("break-",val)
+
+
 #PROGRAM TO RUN WHATS YOUR NAME
 # print('What is your name')
 # name = sys.stdin.readline()
