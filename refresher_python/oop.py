@@ -41,3 +41,24 @@ class Animal:
 #CREATE OBJECT
 dog = Animal("Bella", 33, 10, "Bark")
 print dog.toString()
+
+## INHERITANCE
+class Dog(Animal):
+    __owner = ""
+## overwrite constructor more specific
+    def __init__(self, name, height, weight, sound, owner):
+        self.__owner = owner
+## if i want to use constructor above
+        super(Dog, self).__init__(name, height, weight, sound)
+
+    def set_owner(self, owner):
+        self.__owner = owner
+
+    def get_owner(self):
+        return self.__owner
+
+    def get_type(self):
+        print("Bella is the baby")
+
+    def toString(self):
+        return "{} is {} cm tall and {} killograms and say {}, I love my mom".format(self.__name,self.__height,self.__weight,self.__sound, self.__owner)
